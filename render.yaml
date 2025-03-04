@@ -10,14 +10,19 @@ services:
     name: "™ 𝗣𝘆 𝗚𝗶𝗴𝗮 ـ"
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python3 flk.py & python bestSrcV1(beta).py
+    startCommand: python3 flk.py & python 'bestSrcV1(beta).py'
     region: frankfurt 
     envVars:
-      - key: bot
+      - key: api_id
         sync: false
-      - key: SPEED
+      - key: api_hash
         sync: false
-      - key: acc
+      - key: tele_id
+        sync: false
+      - key: name
+        sync: false
+      - key: url_image
+        value: "https://i.ibb.co/HpzL3hKz/image.jpg"
         sync: false
       - key: connectionString
         value: "PyGiga"
