@@ -17,6 +17,8 @@ services:
         sync: false
       - key: api_hash
         sync: false
+      - key: SESSION_telethon
+        sync: false
       - key: tele_id
         sync: false
       - key: name
