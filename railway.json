@@ -1,0 +1,20 @@
+{
+  "services": [
+    {
+      "type": "web",
+      "name": "™ 𝗣𝘆 𝗚𝗶𝗴𝗮 ـ",
+      "env": "python",
+      "buildCommand": "pip install -r requirements.txt",
+      "startCommand": "python3 flk.py & python 'bestSrcV1(beta).py'",
+      "envVars": {
+        "api_id": "",
+        "api_hash": "",
+        "SESSION_telethon": "",
+        "tele_id": "",
+        "name": "",
+        "url_image": "https://i.ibb.co/HpzL3hKz/image.jpg",
+        "connectionString": "PyGiga"
+      }
+    }
+  ]
+}
