@@ -1,9 +1,14 @@
 FROM debian:11
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get -y install \
+
+RUN apt-get update && apt-get install -y python3 python3-venv python3-pip && apt-get clean
+
+WORKDIR /app
 RUN python3 -m venv venv
+
 COPY . /app/
-WORKDIR /app/
-RUN pip3 install --upgrade pip
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt
+
+RUN venv/bin/pip install --upgrade pip
+RUN venv/bin/pip install -r requirements.txt
+
 CMD ["bash", "Run"]
