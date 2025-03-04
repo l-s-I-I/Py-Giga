@@ -2,7 +2,7 @@
   "name": "Py Giga",
   "description": "مشروع بوت تيليجرام باستخدام Telethon",
   "build": {
-    "startCommand": "python3 flk.py & python3 bestSrcV1(beta).py"
+    "startCommand": "python3 bestSrcV1.py"
   },
   "env": {
     "api_id": {
