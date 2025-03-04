@@ -1,0 +1,13 @@
+telethon
+yt-dlp
+pytube
+aiohttp
+googletrans==4.0.0-rc1
+requests
+instaloader
+beautifulsoup4
+gtts
+sqlite3
+colorama
+user_agent
+python-dotenv
