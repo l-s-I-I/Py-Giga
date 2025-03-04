@@ -1,0 +1,24 @@
+databases:
+  - name: "™ 𝗣𝘆 𝗚𝗶𝗴𝗮 ـ"
+    ipAllowList: []
+    region: frankfurt
+    plan: free
+
+services:
+  - type: web
+    plan: free
+    name: "™ 𝗣𝘆 𝗚𝗶𝗴𝗮 ـ"
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 flk.py & python bestSrcV1(beta).py
+    region: frankfurt 
+    envVars:
+      - key: bot
+        sync: false
+      - key: SPEED
+        sync: false
+      - key: acc
+        sync: false
+      - key: connectionString
+        value: "PyGiga"
+    autoDeploy: false
