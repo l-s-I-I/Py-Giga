@@ -25,7 +25,6 @@ services:
         sync: false
       - key: url_image
         value: "https://i.ibb.co/HpzL3hKz/image.jpg"
-        sync: false
       - key: connectionString
         value: "PyGiga"
     autoDeploy: false
