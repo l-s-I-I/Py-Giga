@@ -10,6 +10,7 @@ print("""يا قلبي السورس متعوب عليه اتمنى تقدر ول
 from telethon import TelegramClient, events, functions, types, Button, errors
 from telethon.tl.functions.photos import UploadProfilePhotoRequest, DeletePhotosRequest
 from telethon.tl.functions.account import ReportPeerRequest
+from telethon.sessions import StringSession
 from telethon.tl.types import InputPeerChannel, InputReportReasonPornography, InputReportReasonSpam, InputReportReasonViolence, InputReportReasonFake, InputReportReasonChildAbuse, InputReportReasonOther,InputPhoto,PeerChannel
 from difflib import get_close_matches
 from yt_dlp import YoutubeDL
@@ -68,12 +69,13 @@ r = Fore.RED
 g = Fore.GREEN
 y = Fore.YELLOW
 p = Fore.MAGENTA
-apId = "ايبي ايدي"
-apHa = "هاشك"
-king =#ايديك
-Pname = "𝗘 𝗥 𝗥 𝗢 𝗥" # اسمك تيلي
-Pimg = "images (1).png" # مسار الصورة
-client = TelegramClient("bestSrc", apId, apHa)
+apId = os.getenv("api_id")
+apHa = os.getenv("api_hash")
+king = os.getenv("tele_id")
+Pname = os.getenv("name")
+Pimg = os.getenv("url_image")
+session = os.getenv("SESSION_telethon")
+client = TelegramClient(StringSession(session), apId, apHa)
 gch = None
 tus = None
 rwl = None
