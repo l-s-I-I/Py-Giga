@@ -1,20 +1,36 @@
 {
-  "services": [
-    {
-      "type": "web",
-      "name": "™ 𝗣𝘆 𝗚𝗶𝗴𝗮 ـ",
-      "env": "python",
-      "buildCommand": "pip install -r requirements.txt",
-      "startCommand": "python3 flk.py & python 'bestSrcV1(beta).py'",
-      "envVars": {
-        "api_id": "",
-        "api_hash": "",
-        "SESSION_telethon": "",
-        "tele_id": "",
-        "name": "",
-        "url_image": "https://i.ibb.co/HpzL3hKz/image.jpg",
-        "connectionString": "PyGiga"
-      }
+  "name": "Py Giga",
+  "description": "مشروع بوت تيليجرام باستخدام Telethon",
+  "env": {
+    "api_id": {
+      "description": "API ID الخاص بحساب تيليجرام",
+      "required": true
+    },
+    "api_hash": {
+      "description": "API Hash الخاص بحساب تيليجرام",
+      "required": true
+    },
+    "SESSION_telethon": {
+      "description": "كود تيليثون",
+      "required": true
+    },
+    "tele_id": {
+      "description": "ايدي تيليجرام",
+      "required": false
+    },
+    "name": {
+      "description": "اسم حسابك",
+      "required": false
+    },
+    "url_image": {
+      "description": "رابط الصورة الافتراضية للبوت",
+      "required": false,
+      "value": "https://i.ibb.co/HpzL3hKz/image.jpg"
+    },
+    "connectionString": {
+      "description": "قاعدة بيانات الاتصال",
+      "required": false,
+      "value": "PyGiga"
     }
-  ]
+  }
 }
