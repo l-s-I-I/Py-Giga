@@ -10,7 +10,7 @@ services:
     name: "™ 𝗣𝘆 𝗚𝗶𝗴𝗮 ـ"
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python3 flk.py & python 'bestSrcV1(beta).py'
+    startCommand: python3 flk.py & python bestSrcV1.py
     region: frankfurt 
     envVars:
       - key: api_id
