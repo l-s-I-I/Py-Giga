@@ -7,7 +7,6 @@ requests
 instaloader
 beautifulsoup4
 gtts
-sqlite3
 colorama
 user_agent
 python-dotenv
